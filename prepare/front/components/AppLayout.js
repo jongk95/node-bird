@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types'
-import Link from 'next/link'
+import React from "react";
+import propTypes from "prop-types";
+import Link from "next/link";
 
 const AppLayout = ({ children }) => {
     return (
@@ -12,11 +12,11 @@ const AppLayout = ({ children }) => {
             </div>
             {children}
         </div>
-    )
-}
+    );
+};
 
 AppLayout.PropTypes = {
-    children: PropTypes.node.isRequired,
-}
+    children: propTypes.node.isRequired,
+};
 
-export default AppLayout
+export default AppLayout;
