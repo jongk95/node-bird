@@ -7,9 +7,8 @@ import styled from "styled-components";
 import UserProfile from "../components/UserProfile";
 import LoginForm from "../components/LoginForm";
 
-const SearchInput = styled(Input.search)`
-
-
+const SearchInput = styled(Input.Search)`
+    vertical-align: middle;
 `;
 
 // eslint-disable-next-line react/prop-types
@@ -35,7 +34,7 @@ const AppLayout = ({ children }) => {
             </Menu>
             <Row gutter={8}>
                 <Col xs={24} md={6}>
-                    {isLoggedIn ? }
+                    {isLoggedIn ? <UserProfile setIsLoggedIn={setIsLoggedIn} /> : <LoginForm setIsLoggedIn={setIsLoggedIn} />}
                 </Col>
                 <Col xs={24} md={12}>
                     {children}
