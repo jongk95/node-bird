@@ -11,6 +11,7 @@ const FormWrapper = styled(Form)`
     padding: 10px;
 `;
 
+// eslint-disable-next-line react/prop-types
 const LoginForm = ({ setIsLoggedIn }) => {
     const [id, setId] = useState("");
     const [password, setPassword] = useState("");
